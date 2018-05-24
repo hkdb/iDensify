@@ -15,13 +15,11 @@ based on [Densify](https://github.com/hkdb/Densify)
 
 ## Screenshots
 
-![Screenshot1](https://osi.3df.io/wp-content/uploads/2018/05/iDensify1.png) ![Screenshot2](https://osi.3df.io/wp-content/uploads/2018/05/iDensify2.png)
-
-Notice that compressed.pdf is 4M; the results from compressing a 28M pdf? I then opened up compressed.pdf and it still looked great!
+![Screenshot2](https://osi.3df.io/wp-content/uploads/2018/05/iDensify2.png)
 
 ## Under the Hood
 
-It essentially takes your GUI input and turns it into the following Ghostscript command:
+It essentially takes your GUI input and turn them into the following Ghostscript command:
 
 ```
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.6 -dPDFSETTINGS=/ebook
@@ -131,5 +129,7 @@ https://www.3df.com.hk
 ## Want a CLI alternative instead?
 
 Check out [cPDF](https://github.com/hkdb/cpdf), a Python script to simplify compress PDF file size with GhostScript
+
+## What about Linux?
 
 Check out [Densify](https://github.com/hkdb/Densify), the original PDF compressor written for Linux which iDensify is based on
