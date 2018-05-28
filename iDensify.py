@@ -262,7 +262,7 @@ class MyWindow(Gtk.Window, threading.Thread):
         cType = cTypeModel[cTypeIter][0]
 
         # Build gs Command
-        self.cmmd = 'gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.6 -dPDFSETTINGS=/' + cType + ' -dNOPAUSE -dQUIET -dBATCH -sOutputFile=' + "\"" + oFile + "\"" + ' ' + "\"" +iFile + "\""
+        self.cmmd = '/usr/local/bin/gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.6 -dPDFSETTINGS=/' + cType + ' -dNOPAUSE -dQUIET -dBATCH -sOutputFile=' + "\"" + oFile + "\"" + ' ' + "\"" +iFile + "\""
 
         # Start Compressing
         q = queue.Queue()
