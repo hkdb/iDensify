@@ -48,9 +48,34 @@ Questionable Conditions that the application will verify with User via A Dialog 
 - Output File does not end with .pdf, verify with user that's really what they want
 - Output File Name Matches a File in the Output Directory
 
+
+---
+
+## Beofre Installation
+
+### 1. Download Python
+Users are required to have Python3 installed in their machine before using the application.
+(Please provide a specific way of installing, either through Terminal/should they consider using bash?)
+
+
+### 2. Grant access
+(Reason behind this move shall be a reasonable move to ease new users without any ideas what they are getting into)
+![Allow](https://osi.3df.io/wp-content/uploads/2018/05/MacSecuritySettings.png)
+
+If the option *Anywhere* is missing, open Terminal.app and type in the following command.
+![Missing Anywhere Option](https://github.com/ivanoung/iDensify/blob/master/img/nodeveloperoption.png?raw=true)
+```
+sudo spctl --master-disable
+```
+User can always revert the operation by entering in the following command.
+```
+sudo spectl --master-enable
+```
+![Sample](https://github.com/ivanoung/iDensify/blob/master/img/terminal.png?raw=true)
+
 ## Installation
 
-Step 1:
+#### Step 1:
 
 Install HomeBrew via Terminal.app if you haven't already:
 
@@ -58,7 +83,7 @@ Install HomeBrew via Terminal.app if you haven't already:
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-Step 2:
+#### Step 2:
 
 Install Ghostscript:
 
@@ -66,23 +91,24 @@ Install Ghostscript:
 brew install gs
 ```
 
-Step 3:
+#### Step 3:
 
 Download the latest [DMG - disk image in Mac OS X](https://osi.3df.io/share/iDensify-0.1.0.dmg)
+![Download folder](https://github.com/ivanoung/iDensify/blob/master/img/justdownloaded.png?raw=true)
 
 
-Step 4:
+#### Step 4:
 
-Mount DMG & Install App Bundle into Applications Folder
+Mount disk image by double-clicking onto the .dmg file
+![Mounted](https://github.com/ivanoung/iDensify/blob/master/img/afterdoubleclick.png?raw=true)
+You should see the disk image mounted under devices
 
-Step 5:
+Setp 5: Install App Bundle into Applications Folder 
+(I'm not even sure what that means, it was difficult to understand without certain knowledge of what that means)
 
-Allow Apps Downloaded from Anywhere
 
-![Allow](https://osi.3df.io/wp-content/uploads/2018/05/MacSecuritySettings.png)
-
-Enjoy!
-
+#### Step 5:
+Launch the program by ...
 
 ## Building Your Own One File Binary & MacOS Bundle
 
@@ -101,6 +127,8 @@ You can just run the Python script:
 ```
 python3 iDensify.py
 ```
+
+---
 
 ## Future Plans
 
