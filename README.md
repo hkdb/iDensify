@@ -68,7 +68,8 @@ brew install gs
 
 Step 3:
 
-Download the latest [DMG](https://osi.3df.io/share/iDensify-0.1.0.dmg)
+Download the latest [DMG - disk image in Mac OS X](https://osi.3df.io/share/iDensify-0.1.0.dmg)
+
 
 Step 4:
 
