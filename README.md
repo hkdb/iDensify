@@ -112,7 +112,7 @@ Install HomeBrew via Terminal.app if you haven't already:
 
 Step 2:
 
-Install Ghostscript:
+Install Python3:
 
 ```
 brew install python3
