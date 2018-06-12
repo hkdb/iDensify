@@ -72,7 +72,7 @@ Download the latest [DMG](https://osi.3df.io/share/iDensify-0.1.0.dmg)
 
 Step 4:
 
-Mount DMG & Install App Bundle into Applications Folder
+Mount DMG & copy App Bundle into your /Applications Folder
 
 Step 5:
 
@@ -80,8 +80,48 @@ Allow Apps Downloaded from Anywhere
 
 ![Allow](https://osi.3df.io/wp-content/uploads/2018/05/MacSecuritySettings.png)
 
+If the option *Anywhere* is missing, click on the lock icon to unlock the settings:
+![Missing Anywhere Option](https://osi.3df.io/wp-content/uploads/2018/06/nodeveloperoption.png)
+
+If it still does not show, then execute the following command in the terminal:
+
+```
+sudo spctl --master-disable
+```
+
+To lock the settings back up, execute the following command in the terminal:
+
+```
+sudo spectl --master-enable
+```
+
 Enjoy!
 
+## Just Python
+
+If this option is chosen, ensure that you already have Python3 installed on your Mac. If not, you can do the following:
+
+Step 1:
+
+Install HomeBrew via Terminal.app if you haven't already:
+
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+Step 2:
+
+Install Ghostscript:
+
+```
+brew install python3
+```
+
+#### Just run the Python script:
+
+```
+python3 iDensify.py
+```
 
 ## Building Your Own One File Binary & MacOS Bundle
 
@@ -91,14 +131,6 @@ Run the following inside the cloned directory:
 
 ```
 python3 -m PyInstaller --clean iDensify.spec
-```
-
-## Just Python
-
-You can just run the Python script:
-
-```
-python3 iDensify.py
 ```
 
 ## Future Plans
@@ -125,6 +157,8 @@ To Learn more please visit:
 https://osi.3df.io
 
 https://www.3df.com.hk
+
+Shout out goes to ![Ivan Oung](https://github.com/ivanoung) for looking through the readme and suggesting changes to make this application more accessible!
 
 ## Want a CLI alternative instead?
 
