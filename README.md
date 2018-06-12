@@ -81,6 +81,7 @@ Allow Apps Downloaded from Anywhere
 ![Allow](https://osi.3df.io/wp-content/uploads/2018/05/MacSecuritySettings.png)
 
 If the option *Anywhere* is missing, click on the lock icon to unlock the settings:
+
 ![Missing Anywhere Option](https://osi.3df.io/wp-content/uploads/2018/06/nodeveloperoption.png)
 
 If it still does not show, then execute the following command in the terminal:
@@ -158,7 +159,7 @@ https://osi.3df.io
 
 https://www.3df.com.hk
 
-Shout out goes to ![Ivan Oung](https://github.com/ivanoung) for looking through the readme and suggesting changes to make this application more accessible!
+Shout out goes to [Ivan Oung](https://github.com/ivanoung) for looking through the readme and suggesting changes to make this application more accessible!
 
 ## Want a CLI alternative instead?
 
